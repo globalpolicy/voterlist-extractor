@@ -199,7 +199,7 @@ def populateVDCs():
                 firstoption=False
 
 
-def populateDistrictDictionary():
+def populateDistricts():
     rooturl="http://202.166.205.141/bbvrs/index.php"
     responsetext=requests.get(rooturl).text
     soup=BeautifulSoup(responsetext)
@@ -215,7 +215,7 @@ def populateDistrictDictionary():
             first=False
 
 
-populateDistrictDictionary()
+populateDistricts()
 populateVDCs()
 populateWards()
 populateBooths()
