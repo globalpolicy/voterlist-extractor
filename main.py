@@ -219,6 +219,9 @@ populateDistricts()
 populateVDCs()
 populateWards()
 populateBooths()
+# if "uptopollbooth.txt" i.e. dictionary of the districts, vdcs, wards and booths, is available,
+# comment out the calls to populate districts, vdcs, wards and booths and directly load  the dictionary
+# into masterDict using eval() as shown below
 # with open("uptopollbooth.txt","r",encoding="utf-8") as file:
 #     masterDict=eval(file.read())
 populateVoters_Into_DB(databaseName)
