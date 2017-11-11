@@ -2,6 +2,7 @@
 Simple script to extract into a database the names of registered voters from the website of the Election Commission of Nepal
 
 Tips for querying the large database(~ 5 GB) that will be spit out by the script:
+
 +Create indices for the columns you will be querying before running the actual queries on those columns. 
   E.g. CREATE INDEX IDX_VoterName ON AllVoters (VoterName)
 +Test how the SQLite query engine is going to execute your query by prefixing the query with EXPLAIN QUERY PLAN 
